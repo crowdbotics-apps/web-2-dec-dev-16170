@@ -20,7 +20,7 @@ export class Blank extends React.Component {
   static navigationOptions = ({ navigation }) => {
     return { headerLeft: <SlideMenuIcon navigationProps={navigation} /> }
   }
-  state = { DateTimePicker_3: new Date("") }
+  state = { DateTimePicker_3: new Date(""), Switch_4: true }
   render = () => (
     <View>
       <Button title="Press me!" onPress={() => alert("Pressed!")} />
@@ -31,6 +31,12 @@ export class Blank extends React.Component {
           this.setState({ DateTimePicker_3: selectedDate })
         }
       />
+      <Switch
+        trackColor={{ false: "#C0CCDA", true: "#409EFF" }}
+        style={styles.Switch_4}
+        value={this.state.Switch_4}
+        onValueChange={nextChecked => this.setState({ Switch_4: nextChecked })}
+      />
     </View>
   )
 }
@@ -38,7 +44,8 @@ export class Blank extends React.Component {
 const styles = StyleSheet.create({
   View_1: {},
   Button_2: {},
-  DateTimePicker_3: {}
+  DateTimePicker_3: {},
+  Switch_4: { alignSelf: "flex-start" }
 })
 
 function mapStateToProps(state) {

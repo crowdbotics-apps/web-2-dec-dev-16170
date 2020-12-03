@@ -4,7 +4,7 @@ class App extends Component {
   render() {
       return (
           <View style={styles.container}>
-             <Text>Blank</Text>
+             <Text>Blank hgjhgjg jhgjhgjhg jhgjhghj hgjhgjhg jhjgjgh jhgjhgjhg jhgj</Text>
           </View>
       );
   }

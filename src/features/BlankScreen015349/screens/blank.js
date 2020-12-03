@@ -23,7 +23,10 @@ export class Blank extends React.Component {
   state = { DateTimePicker_3: new Date(""), Switch_4: true }
   render = () => (
     <View>
-      <Button title="Press me!" onPress={() => alert("Pressed!")} />
+      <Button
+        title="Press me!"
+        onPress={() => this.props.navigation.navigate("3dec215350")}
+      />
       <DateTimePicker
         showIcon={false}
         date={this.state.DateTimePicker_3}
